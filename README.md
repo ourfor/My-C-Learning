@@ -68,7 +68,7 @@
 - You can use macOS and Windows to compile source code. Linux is also a good choice.
 
 
-![Sublime Text 3](http://ozkg680jm.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-03-21%20%E4%B8%8B%E5%8D%8811.25.00.png)      
+![Sublime Text 3](https://github.com/ourfor/My-C-Learning/blob/master/Sublime-text3.png)      
 
 
 > Because I like using Command line and prefer to sample GUI, I use macOS and Ubuntu instead of the popular operation system, Windows. It means that I am not familian with command line in Windows.

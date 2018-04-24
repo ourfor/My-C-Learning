@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+class Book
+{
+public:
+	Book(int w);
+	static int sumnum;
+private:
+	int num;
+};
+Book::Book(int w)
+{
+	num=w;
+	sumnum-=w;
+}
+int Book::sumnum=120;
+int main()
+{
+	Book b1(20);
+	Book b2(70);
+	cout << Book::sumnum << endl;
+	return 0;
+}

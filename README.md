@@ -114,6 +114,8 @@ Then, entering ` ls `,you can see a new file which name is "a.out". Last use com
 |C|.c|
 |C++|.cpp|
 
+You can also download the sources code of gcc and compile it.Sometime the version , which the system installed is too old,and you compile some projects that need heigh version to compile,you can do this.
+
 
 ## As for Windows platform  
 You can install IDE , such as Code::Blocks 、 Qt    

@@ -19,6 +19,13 @@ typedef struct Queue{
 }Queue;
 Queue Q;
 
+//－－－－－－－－－－－－－－－－－－定义链队列－－－－－－－－－－－－－－－－－－
+typedef struct QNode
+｛
+  ElemType data;              //存储数据
+  struct Qnode * next;        //存储下一个结点的信息
+｝
+
 //－－－－－－－－－－－－－－－－－－队列初始化常量－－－－－－－－－－－－－－－－－－
 #define Queue_Init_Size 100
 #define Queue_Increasing_Size 10

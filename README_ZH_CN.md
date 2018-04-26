@@ -110,6 +110,9 @@ set nu            " 显示行号
 Terminal下输入` vim `
 在非插入状态下输入` :PluginInstall `安装插件。
 
+更多软件推荐，详见[博客](https://ourfor.top)
+
+***ourfor.top***
 
 
 

@@ -87,12 +87,14 @@ vi .zshrc      #编辑zsh配置文件，找到主题设置并修改为ZSH_THEME=
 cd ~
 vi .zshrc   #我使用的是zsh，所以编辑这个文件
 ```
-添加下面几条，为` gcc-7 `设置别名
+任意位置添加下面几条，为` gcc-7 `设置别名
 ```bash
 #gcc -version
 alias gcc="gcc-7"
 alias g++="g++-7"
 ```
+输入` source .zshrc `使配置生效
+查看是否生效` gcc -v `如果显示为` Homebrew `安装版本则配置正确✅
 
 
 

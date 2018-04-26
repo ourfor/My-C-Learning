@@ -18,6 +18,12 @@
 - [x] SublimeText 3
 - [x] Nodepad++
 
+- Terminal美化
+- [x] zsh
+- [x] powerline-theme
+- [x] vim-airline
+
+
 个人比较喜欢在 ***Terminal*** 下面使用` gcc/g++ `编译源代码。
 
 ### 环境配置(以macOS为例)
@@ -40,6 +46,15 @@ brew install git  #安装git
 ```
 
 - 安装` wget `下载工具-下载更方便
-虽然系统自带
+虽然系统自带` Curl `,不过还是推荐安装` wget `和` aria2c `
+
+安装wget
+```bash
+brew install wget  #安装wget
+```
+源码编译安装` Aria2c `
+
+
+
 
 

@@ -79,6 +79,23 @@ cd ~
 vi .zshrc      #编辑zsh配置文件，找到主题设置并修改为ZSH_THEME="powerline"
 ```
 
+- 更新gcc-自带gcc太旧无法满足大部分项目需要
+1. 查询` brew `仓库默认gcc版本，[查询](http://formulae.brew.sh/)，在搜索🔍框里输入` gcc `,目前默认为` -version 7.3.0_1 `
+2. 终端输入` brew install gcc `
+3. 终端安装完毕，编辑shell配置文件启用
+```bash
+cd ~
+vi .zshrc   #我使用的是zsh，所以编辑这个文件
+```
+添加下面几条，为` gcc-7 `设置别名
+```bash
+#gcc -version
+alias gcc="gcc-7"
+alias g++="g++-7"
+```
+
+
+
 - 安装` Airline `-Vim会更强
 
 ```bash

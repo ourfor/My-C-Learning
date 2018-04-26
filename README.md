@@ -118,7 +118,12 @@ You can also download the sources code of gcc and compile it.Sometime the versio
 
 
 ## As for Windows platform  
-You can install IDE , such as Code::Blocks 、 Qt    
+You can install IDE , such as Code::Blocks 、 Qt  
+
+
+
+## LICENSE
+- [LICENSE](https://github.com/ourfor/My-C-Learning/blob/master/LICENSE)
 
 
 

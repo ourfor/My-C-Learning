@@ -18,4 +18,28 @@
 - [x] SublimeText 3
 - [x] Nodepad++
 
-个人比较喜欢在 *** Terminal *** 下面使用` gcc/g++ `编译源代码。
+个人比较喜欢在 ***Terminal*** 下面使用` gcc/g++ `编译源代码。
+
+### 环境配置(以macOS为例)
+- 安装` Homebrew `-从Linux过渡
+
+在` Terminal `下面输入以下命令：
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+可能会要求重复多次输入管理员密码，切记不要切换` root `用户，否则无法安装
+
+- 安装` Git `-熟悉Git命令更好利用GitHub
+
+可以到Git官网下载安装包，不过我更推荐使用` Homebrew `从源安装，同样在` Terminal `键入以下命令：
+
+```bash
+brew update    #从软件仓库更新软件列表
+brew install git  #安装git
+```
+
+- 安装` wget `下载工具-下载更方便
+虽然系统自带
+
+

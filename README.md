@@ -116,7 +116,7 @@ Then, entering ` ls `,you can see a new file which name is "a.out". Last use com
 
 You can also download the sources code of gcc and compile it.Sometime the version , which the system installed is too old,and you compile some projects that need heigh version to compile,you can do this.
 
-> [更多推荐]()
+> [更多推荐](https://github.com/ourfor/My-C-Learning/blob/master/README_ZH_CN.md)
 
 
 ## As for Windows platform  

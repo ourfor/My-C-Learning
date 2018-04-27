@@ -116,6 +116,8 @@ Then, entering ` ls `,you can see a new file which name is "a.out". Last use com
 
 You can also download the sources code of gcc and compile it.Sometime the version , which the system installed is too old,and you compile some projects that need heigh version to compile,you can do this.
 
+> [更多推荐]()
+
 
 ## As for Windows platform  
 You can install IDE , such as Code::Blocks 、 Qt  
@@ -128,7 +130,7 @@ You can install IDE , such as Code::Blocks 、 Qt  
 
 ## WIKI
 
-- [WIKI]()
+- [WIKI](https://github.com/ourfor/My-C-Learning/wiki)
 
 
 <img src="http://ozkg680jm.bkt.clouddn.com/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5.jpg" width=100% height=100%>         

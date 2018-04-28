@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //线性表的建立、插入、删除、查询以及销毁。
 =======
 //线性表-顺序表的建立、插入、删除、查询以及销毁。
@@ -9,10 +9,6 @@
 using namespace std;
 
 //--------------------定义状态代码--------------------
-<<<<<<< HEAD
-=======
-
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 #define OK 1
 #define ERROR 0
 #define OVERFLOW -2
@@ -22,18 +18,11 @@ typedef int Status;
 typedef int ElemType;
 
 //-------------------线性表初始量-------------------
-<<<<<<< HEAD
-=======
 
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 #define LIST_INIT_SIZE 100
 #define LIST_ADD_SIZE 10
 
 //-------------------定义结构体-------------------
-<<<<<<< HEAD
-=======
-
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 typedef struct{
 	ElemType * elem;      //基地址
 	int length;           //线性表长度
@@ -41,10 +30,6 @@ typedef struct{
 }Sqlist;
 
 //-------------------初始化线性表-------------------
-<<<<<<< HEAD
-=======
-
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 Status InitList(Sqlist &T)
 {
 //构造一个空的线性表L
@@ -56,10 +41,6 @@ Status InitList(Sqlist &T)
 	return OK;
 }//InitList
 //-------------------线性表数据的输出-------------------
-<<<<<<< HEAD
-=======
-
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 Status DisplayList(Sqlist T)
 {   
 	ElemType * q=T.elem;
@@ -73,10 +54,6 @@ Status DisplayList(Sqlist T)
 	return OK;
 }
 //-------------------线性表数据输入-------------------
-<<<<<<< HEAD
-=======
-
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 Status InputList(Sqlist &T)
 {
 	cout << "线性表中有多少个元素：";
@@ -94,10 +71,6 @@ Status InputList(Sqlist &T)
 }
 
 //-------------------线性表元素的插入-------------------
-<<<<<<< HEAD
-=======
-
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 Status InsertList(Sqlist &T,int i,ElemType e)
 {
 	//在第i个元素之前插入，使其成为第i个元素，判断插入位置i的合法性
@@ -120,10 +93,6 @@ Status InsertList(Sqlist &T,int i,ElemType e)
 	return OK;
 }
 //-------------------线性表元素的删除-------------------
-<<<<<<< HEAD
-=======
-
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 Status DeleteList(Sqlist &T,int i,ElemType &f)
 {
 	//删除位置的取值范围1<=i<=T.length
@@ -140,10 +109,6 @@ Status DeleteList(Sqlist &T,int i,ElemType &f)
 	return OK;
 }
 //-------------------线性表元素的排序-------------------
-<<<<<<< HEAD
-=======
-
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 Status RankList(Sqlist &T)
 {
 	cout << "自小至大排序：" << endl;
@@ -180,10 +145,6 @@ Status LocalList(Sqlist &T,ElemType find_elem)
 	return ERROR;
 }
 //-------------------主函数-------------------
-<<<<<<< HEAD
-=======
-
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 int main()
 {
 	Sqlist T;

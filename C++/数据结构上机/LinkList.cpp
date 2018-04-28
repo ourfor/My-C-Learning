@@ -67,15 +67,12 @@ Status InputList(LNode * &head)
 Status DisplayList(LNode *head)
 {
 	LNode *p;
-<<<<<<< HEAD
 	/*for(p=head->next;p->next!=NULL;p=p->next)
 	{
 		cout << p->data << " ";
 
 	}
 	*/
-=======
->>>>>>> bce2b59f930798faf9de1b833e4911b441d50959
 	p=head->next;
 	do{
 		cout << p->data << " ";

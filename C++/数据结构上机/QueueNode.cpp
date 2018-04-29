@@ -79,6 +79,36 @@ Status OutQueue(Queue Q)
 	return OK;
 }
 
+//------------------------------元素插入------------------------------
+
+Status InsertQueue(Queue &Q,QElemType e)
+{
+	Node *p;
+	p=(Node *)malloc(sizeof(Node));
+	Q.rear->next=p;
+	Q.rear->data=e;
+	Q.rear=p;
+
+	return OK;
+}
+
+//------------------------------输入待插入的元素------------------------------
+
+Status GetQueue(Queue &Q)
+{
+	char stop_input='\0';
+	cout << "\n" << "输入待插入的元素:\n";
+	for(QElemType e=0;stop_input!='\n';)
+	{		
+		cin >> e;
+		stop_input=cin.get();
+		InsertQueue(Q,e);
+	}
+
+
+	return OK;
+}
+
 //------------------------------主函数------------------------------
 
 int main()
@@ -86,6 +116,8 @@ int main()
 
 	InitQueue(Q);
 	EnQueue(Q);
+	OutQueue(Q);
+	GetQueue(Q);
 	OutQueue(Q);
 
 	return 0;

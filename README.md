@@ -105,7 +105,7 @@ Making sure that you have install *g++* or *gcc*, In the Terminal, you can enter
 Changing directory to where your source code file is. And then use this command line - ` g++ xxx.cpp ` to compile source code.
 The "xxx.cpp" is the name of your source code file.    
 
-Then, entering ` ls `,you can see a new file which name is "a.out". Last use command line " ./a.out " to run it.  
+Then, entering ` ls `,you can see a new file which name is "a.out". Last use command line ` ./a.out ` to run it.  
 
 > Notice: We use gcc/g++ to compile source code. Some detials is very important. 
 

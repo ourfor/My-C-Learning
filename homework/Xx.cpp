@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Xx
+
 {
 private:
 	int num;
@@ -15,3 +15,4 @@ int main()
 	cout << "Exit main" << endl;
 	return 0;
 }
+

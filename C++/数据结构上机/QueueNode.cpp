@@ -95,7 +95,7 @@ Status InsertQueue(Queue &Q,QElemType e)
 //------------------------------输入待插入的元素------------------------------
 
 Status GetQueue(Queue &Q)
-{
+{ 
 	char stop_input='\0';
 	cout << "\n" << "输入待插入的元素:\n";
 	for(QElemType e=0;stop_input!='\n';)

@@ -90,19 +90,19 @@ int main()
 {
 	complex c1(2.0),c2(3.0,-1.0),c3;
 	c3=c1 + c2;
-	cout << "\nc1 + c2";
+	cout << "\nc1 + c2 = ";
 	print(c3);
 	c3=c1 - c2;
-	cout << "\nc1 - c2";
+	cout << "\nc1 - c2 = ";
 	print(c3);
 	c3=c1 * c2;
-	cout << "\nc1 * c2";
+	cout << "\nc1 * c2 = ";
 	print(c3);
 	c3=c1 / c2;
-	cout << "\nc1 / c2";
+	cout << "\nc1 / c2 = ";
 	print(c3);
 	c3=(c1 + c2) * (c1 - c2) * c2 / c1;
-	cout << "\n(c1 + c2) * (c1 - c2) * c2/c1 =";
+	cout << "\n(c1 + c2) * (c1 - c2) * c2/c1 = ";
 	print(c3);
 	cout << endl;
 	return 0;

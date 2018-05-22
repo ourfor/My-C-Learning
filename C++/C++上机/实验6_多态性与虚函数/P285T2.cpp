@@ -105,3 +105,57 @@ int main()
 	return 0;
 
 }
+
+
+#include<iostram>
+using namespace std;
+
+class Array
+{
+public:
+	Array(int m,int n){double a[m][n];Array_m=m;Array_n=n;}
+	void InputArrayElem();
+
+private:
+	int Array_m;      //定义一个m * n 的矩阵，用二维数组存储矩阵中的元素
+	int Array_n;
+};
+
+void Array::InputArrayElem()
+{
+	double a[40][40]
+	union stop_end
+	{
+		char stop_end_c;
+		double stop_end_d;
+	};
+
+	for(int j=0;stop_end!=' ';j++)
+	{
+
+			for(int i=0;stop!=' ';i++)
+			{
+
+				stop_end=cin.get
+				if(i==0)
+				{
+					if(stop_end!=' ') a[j][0]=stop_end;
+					else break;
+				}
+				else
+				{
+					cin >> a[j][i];
+					char stop = cin.get;
+				}
+				
+			}
+	}
+	Array(j,i);
+	for(j=0;j<Array_m;j++)
+	{
+			for(i=0;i<=j;i++)
+				Array[j][i]=a[j][i];
+	}
+
+
+}

@@ -10,7 +10,7 @@ public:
 	void seta(int i){a=i;}
 	int geta(){return a;}
 
-public:
+protected:
 	int a;
 
 };

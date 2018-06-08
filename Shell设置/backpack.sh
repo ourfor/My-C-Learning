@@ -27,5 +27,11 @@ make&&make install #安装neofetch
 #vim插件安装
 cd ~
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+rm -rf .zshrc&&rm -rf .vimrc
+wget https://github.com/ourfor/My-C-Learning/blob/master/Shell%E8%AE%BE%E7%BD%AE/.zshrc
+wget https://github.com/ourfor/My-C-Learning/blob/master/Shell%E8%AE%BE%E7%BD%AE/.vimrc
+#配置文件生效
+source .zshrc
+source .vimrc
 
-
+echo -e "Terminal下输入vim,在非插入状态下输入:PluginInstall安装插件。"

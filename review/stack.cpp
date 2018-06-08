@@ -64,7 +64,7 @@
        Push (s,N % d );
        N=N / d ;
    }
-   cout<<"×ª»»ºóµÄÊýÖµÎª£º";
+   cout<<"è½¬æ¢åŽçš„æ•°å€¼ä¸ºï¼š";
    while(!StackEmpty (s))
     {
        Pop (s,x ) ;
@@ -85,7 +85,7 @@ int main()
 
    int n,d;
 
-   cout<<"ÄúÒª°ÑÄÄ¸öÕûÊý×ª»¯Îª¼¸½øÖÆ£º";
+   cout<<"æ‚¨è¦æŠŠå“ªä¸ªæ•´æ•°è½¬åŒ–ä¸ºå‡ è¿›åˆ¶ï¼š";
    cin>>n>>d;
    conversion(n,d);
    system("PAUSE");

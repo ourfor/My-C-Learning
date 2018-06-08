@@ -16,19 +16,19 @@ typedef struct BiTNode {
 } BiTNode,  *BiTree;
 
 void Preorder(BiTree T)
- { // ÏÈĞò±éÀú¶ş²æÊ÷ 
+ { // å…ˆåºéå†äºŒå‰æ ‘ 
       if (T) {
-          cout<<T->data; // ·ÃÎÊ½áµã
-          Preorder(T->lchild); // ±éÀú×ó×ÓÊ÷
-          Preorder(T->rchild); // ±éÀúÓÒ×ÓÊ÷
+          cout<<T->data; // è®¿é—®ç»“ç‚¹
+          Preorder(T->lchild); // éå†å·¦å­æ ‘
+          Preorder(T->rchild); // éå†å³å­æ ‘
        }
   }
 void Inorder(BiTree T)
- { // ÖĞĞò±éÀú¶ş²æÊ÷ 
+ { // ä¸­åºéå†äºŒå‰æ ‘ 
       if (T) {
-          Inorder(T->lchild); // ±éÀú×ó×ÓÊ÷
-          cout<<T->data; // ·ÃÎÊ½áµã
-          Inorder(T->rchild); // ±éÀúÓÒ×ÓÊ÷
+          Inorder(T->lchild); // éå†å·¦å­æ ‘
+          cout<<T->data; // è®¿é—®ç»“ç‚¹
+          Inorder(T->rchild); // éå†å³å­æ ‘
        }
   }
 void CountLeaf (BiTree T, int   &count)
@@ -37,9 +37,9 @@ void CountLeaf (BiTree T, int   &count)
          {
              if ((!T->lchild)&& (!T->rchild))     count++;
              CountLeaf( T->lchild, count); 
-                        // Í³¼Æ×ó×ÓÊ÷ÖĞÒ¶×Ó½áµã¸öÊı
+                        // ç»Ÿè®¡å·¦å­æ ‘ä¸­å¶å­ç»“ç‚¹ä¸ªæ•°
              CountLeaf( T->rchild, count); 
-                        // Í³¼ÆÓÒ×ÓÊ÷ÖĞÒ¶×Ó½áµã¸öÊı
+                        // ç»Ÿè®¡å³å­æ ‘ä¸­å¶å­ç»“ç‚¹ä¸ªæ•°
          }
       }
       
@@ -58,17 +58,17 @@ int Depth (BiTree T )
   }
 
 void CreateBiTree(BiTree &T) {
-   // °´ÏÈĞò´ÎĞòÊäÈë¶ş²æÊ÷ÖĞ½áµãµÄÖµ£¨Ò»¸ö×Ö·û£©£¬
-   //¿Õ¸ñ×Ö·û±íÊ¾¿ÕÊ÷£¬¹¹Ôì¶ş²æÁ´±í±íÊ¾µÄ¶ş²æÊ÷T¡£
+   // æŒ‰å…ˆåºæ¬¡åºè¾“å…¥äºŒå‰æ ‘ä¸­ç»“ç‚¹çš„å€¼ï¼ˆä¸€ä¸ªå­—ç¬¦ï¼‰ï¼Œ
+   //ç©ºæ ¼å­—ç¬¦è¡¨ç¤ºç©ºæ ‘ï¼Œæ„é€ äºŒå‰é“¾è¡¨è¡¨ç¤ºçš„äºŒå‰æ ‘Tã€‚
    char ch;
   scanf("%c",&ch);
   if (ch==' ')    T = NULL;
   else {
       if (!(T = (BiTNode *)malloc(sizeof(BiTNode))))
       exit(OVERFLOW);
-     T->data = ch; // Éú³É¸ù½áµã
-     CreateBiTree(T->lchild); // ¹¹Ôì×ó×ÓÊ÷
-     CreateBiTree(T->rchild); // ¹¹ÔìÓÒ×ÓÊ÷
+     T->data = ch; // ç”Ÿæˆæ ¹ç»“ç‚¹
+     CreateBiTree(T->lchild); // æ„é€ å·¦å­æ ‘
+     CreateBiTree(T->rchild); // æ„é€ å³å­æ ‘
    }
  } // CreateBiTree 
 

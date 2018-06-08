@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#define MAXSIZE 9 // ´æ´¢¿Õ¼ä³õÊ¼·ÖÅäÁ¿
+#define MAXSIZE 9 // å­˜å‚¨ç©ºé—´åˆå§‹åˆ†é…é‡
 #define OK 1
 #define ERROR 0
 #define TRUE 1
@@ -27,11 +27,11 @@ int LocateVex(Graph G,char v)
        return i;
    return -1;
 }
-// ½¨Á¢Í¼µÄÁÚ½Ó¾ØÕó
+// å»ºç«‹å›¾çš„é‚»æ¥çŸ©é˜µ
 void  CreateUDG(Graph &G)
 {
 	int i,j,k;
-	printf("ÊäÈë¶¥µãÊıºÍ±ßÊı:\n");
+	printf("è¾“å…¥é¡¶ç‚¹æ•°å’Œè¾¹æ•°:\n");
 	cin>>G.vexnum>>G.arcnum;
 	for(i = 0;i < G.vexnum;i++)
 		cin>>G.vexs[i];
@@ -41,7 +41,7 @@ void  CreateUDG(Graph &G)
 	for(k = 0;k < G.arcnum;k++)
 	{
         char v1,v2;
-		cout<<"ÊäÈë±ßÉÏµÄÁ½¸ö¶¥µã:\n";
+		cout<<"è¾“å…¥è¾¹ä¸Šçš„ä¸¤ä¸ªé¡¶ç‚¹:\n";
 		cin>>v1>>v2;
 	    i=LocateVex(G,v1);
         j=LocateVex(G,v2);
@@ -72,7 +72,7 @@ int NextAdjVex(Graph G, int v, int w)
 
 int  visited[MAXSIZE];
 
-// ÁÚ½Ó¾ØÕóµÄÉî¶ÈÓÅÏÈµİ¹éËã·¨
+// é‚»æ¥çŸ©é˜µçš„æ·±åº¦ä¼˜å…ˆé€’å½’ç®—æ³•
 void DFS(Graph G, int v)
 {
    visited[v] = TRUE;
@@ -82,7 +82,7 @@ void DFS(Graph G, int v)
 }
 
 
-//ÁÚ½Ó¾ØÕóµÄÉî¶È±éÀú²Ù×÷
+//é‚»æ¥çŸ©é˜µçš„æ·±åº¦éå†æ“ä½œ
 void DFSTraverse(Graph G)
 {
 	int i;
@@ -98,7 +98,7 @@ int main()
 {
 	Graph G;
 	CreateUDG(G);
-	cout<<"Éî¶È±éÀú:";
+	cout<<"æ·±åº¦éå†:";
 	DFSTraverse(G);
     system("PAUSE");
 	return 0;

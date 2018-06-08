@@ -8,9 +8,9 @@
  #define ERROR 0
  #define INFEASIBLE -1
  #define OVERFLOW -2
- typedef  int Status; /* intÊÇº¯ÊıµÄÀàĞÍ,ÆäÖµÊÇº¯Êı½á¹û×´Ì¬´úÂë£¬ÈçOKµÈ */
- #define LIST_INIT_SIZE 10 /* ÏßĞÔ±í´æ´¢¿Õ¼äµÄ³õÊ¼·ÖÅäÁ¿ */
- #define LISTINCREMENT 2 /* ÏßĞÔ±í´æ´¢¿Õ¼äµÄ·ÖÅäÔöÁ¿ */
+ typedef  int Status; /* intæ˜¯å‡½æ•°çš„ç±»å‹,å…¶å€¼æ˜¯å‡½æ•°ç»“æœçŠ¶æ€ä»£ç ï¼Œå¦‚OKç­‰ */
+ #define LIST_INIT_SIZE 10 /* çº¿æ€§è¡¨å­˜å‚¨ç©ºé—´çš„åˆå§‹åˆ†é…é‡ */
+ #define LISTINCREMENT 2 /* çº¿æ€§è¡¨å­˜å‚¨ç©ºé—´çš„åˆ†é…å¢é‡ */
  typedef int ElemType;
  typedef struct
  {
@@ -21,7 +21,7 @@
 
 
 
-Status InitList(SqList  &L) /* Ëã·¨2.3 */
+Status InitList(SqList  &L) /* ç®—æ³•2.3 */
  {
    L.elem=(int*)malloc(LIST_INIT_SIZE*sizeof(ElemType));
    if(!L.elem)
@@ -33,45 +33,45 @@ Status InitList(SqList  &L) /* Ëã·¨2.3 */
 
 
 
-  Status ListInsert(SqList &L, int i ,ElemType e) /* Ëã·¨2.4 */
+  Status ListInsert(SqList &L, int i ,ElemType e) /* ç®—æ³•2.4 */
  { int *newbase,*q,*p;
-   if(i<1||i>L.length+1) /* iÖµ²»ºÏ·¨ */
+   if(i<1||i>L.length+1) /* iå€¼ä¸åˆæ³• */
      return ERROR; 
-   if(L.length>=L.listsize) /* µ±Ç°´æ´¢¿Õ¼äÒÑÂú,Ôö¼Ó·ÖÅä */
+   if(L.length>=L.listsize) /* å½“å‰å­˜å‚¨ç©ºé—´å·²æ»¡,å¢åŠ åˆ†é… */
    {
      newbase=(int *)realloc(L.elem,(L.listsize+LISTINCREMENT)*sizeof(ElemType));
      if(!newbase)
-       exit(OVERFLOW); /* ´æ´¢·ÖÅäÊ§°Ü */
-     L.elem=newbase; /* ĞÂ»ùÖ· */
-     L.listsize+=LISTINCREMENT; /* Ôö¼Ó´æ´¢ÈİÁ¿ */
+       exit(OVERFLOW); /* å­˜å‚¨åˆ†é…å¤±è´¥ */
+     L.elem=newbase; /* æ–°åŸºå€ */
+     L.listsize+=LISTINCREMENT; /* å¢åŠ å­˜å‚¨å®¹é‡ */
    }
-   q=L.elem+i-1; /* qÎª²åÈëÎ»ÖÃ */
-   for(p=L.elem+L.length-1;p>=q;--p) /* ²åÈëÎ»ÖÃ¼°Ö®ºóµÄÔªËØÓÒÒÆ */
+   q=L.elem+i-1; /* qä¸ºæ’å…¥ä½ç½® */
+   for(p=L.elem+L.length-1;p>=q;--p) /* æ’å…¥ä½ç½®åŠä¹‹åçš„å…ƒç´ å³ç§» */
      *(p+1)=*p;
-   *q=e; /* ²åÈëe */
-   ++L.length; /* ±í³¤Ôö1 */
+   *q=e; /* æ’å…¥e */
+   ++L.length; /* è¡¨é•¿å¢1 */
    return OK;
  }
 
- Status ListDelete(SqList &L,int i,ElemType &e) /* Ëã·¨2.5 */
+ Status ListDelete(SqList &L,int i,ElemType &e) /* ç®—æ³•2.5 */
  {
    int *p,*q;
-   if(i<1||i>L.length) /* iÖµ²»ºÏ·¨ */
+   if(i<1||i>L.length) /* iå€¼ä¸åˆæ³• */
      return ERROR;
-   p=L.elem+i-1; /* pÎª±»É¾³ıÔªËØµÄÎ»ÖÃ */
-   e=*p; /* ±»É¾³ıÔªËØµÄÖµ¸³¸øe */
-   q=L.elem+L.length-1; /* ±íÎ²ÔªËØµÄÎ»ÖÃ */
-   for(++p;p<=q;++p) /* ±»É¾³ıÔªËØÖ®ºóµÄÔªËØ×óÒÆ */
+   p=L.elem+i-1; /* pä¸ºè¢«åˆ é™¤å…ƒç´ çš„ä½ç½® */
+   e=*p; /* è¢«åˆ é™¤å…ƒç´ çš„å€¼èµ‹ç»™e */
+   q=L.elem+L.length-1; /* è¡¨å°¾å…ƒç´ çš„ä½ç½® */
+   for(++p;p<=q;++p) /* è¢«åˆ é™¤å…ƒç´ ä¹‹åçš„å…ƒç´ å·¦ç§» */
      *(p-1)=*p;
-   L.length--; /* ±í³¤¼õ1 */
+   L.length--; /* è¡¨é•¿å‡1 */
    return OK;
  }
 
-  int LocateElem(SqList L, ElemType e)        /* Ëã·¨2.6*/
+  int LocateElem(SqList L, ElemType e)        /* ç®—æ³•2.6*/
  {
    int *p;
    int i=1;
-   p=L.elem; /* pµÄ³õÖµÎªµÚ1¸öÔªËØµÄ´æ´¢Î»ÖÃ */
+   p=L.elem; /* pçš„åˆå€¼ä¸ºç¬¬1ä¸ªå…ƒç´ çš„å­˜å‚¨ä½ç½® */
    while(i<=L.length&&(*p++!=e))
      ++i;
    if(i<=L.length)
@@ -95,32 +95,32 @@ int main()
    ElemType e;
    int i,n,t;
    InitList(L);
-   cout<<"ÄúÒªÔÚ±íÖĞ²åÈë¼¸¸öÔªËØ£º";
+   cout<<"æ‚¨è¦åœ¨è¡¨ä¸­æ’å…¥å‡ ä¸ªå…ƒç´ ï¼š";
    cin>>n;
    for(i=1;i<=n;i++)
    {
      cin>>e;
      ListInsert(L,i,e);
    }
-   cout<<"Ä¿Ç°±íÖĞÔªËØÎª£º";
+   cout<<"ç›®å‰è¡¨ä¸­å…ƒç´ ä¸ºï¼š";
    print(L);
 
-   cout<<"ÇëÊäÈëÄúÒª²éÑ¯µÄÖµ£º";
+   cout<<"è¯·è¾“å…¥æ‚¨è¦æŸ¥è¯¢çš„å€¼ï¼š";
    cin>>e;
    i=LocateElem(L,e);
    if(i==0)
-      cout<<"²éÕÒÊ§°Ü"<<endl;
+      cout<<"æŸ¥æ‰¾å¤±è´¥"<<endl;
    else 
-      cout<<e<<"ÔÚ±íÖĞµÄÎ»ÖÃÎª:"<<i<<endl;
+      cout<<e<<"åœ¨è¡¨ä¸­çš„ä½ç½®ä¸º:"<<i<<endl;
    
-   cout<<"ÇëÊäÈëÄúÒªÉ¾³ıÔªËØµÄÎ»ÖÃ£º";
+   cout<<"è¯·è¾“å…¥æ‚¨è¦åˆ é™¤å…ƒç´ çš„ä½ç½®ï¼š";
    cin>>i;
-   t=ListDelete(L,i,e); /* É¾³ıµÚj¸öÊı¾İ */
+   t=ListDelete(L,i,e); /* åˆ é™¤ç¬¬jä¸ªæ•°æ® */
    if(t==ERROR)
-       cout<<"É¾³ıµÚ"<<i<<"¸öÊı¾İÊ§°Ü"<<endl;
+       cout<<"åˆ é™¤ç¬¬"<<i<<"ä¸ªæ•°æ®å¤±è´¥"<<endl;
      else
-       cout<<"É¾³ıµÚ"<<i<<"¸öµÄÔªËØÖµÎª"<<e<<endl;
-   cout<<"Ä¿Ç°±íÖĞÔªËØÎª£º";
+       cout<<"åˆ é™¤ç¬¬"<<i<<"ä¸ªçš„å…ƒç´ å€¼ä¸º"<<e<<endl;
+   cout<<"ç›®å‰è¡¨ä¸­å…ƒç´ ä¸ºï¼š";
    print(L);
    system("PAUSE");
    return 1;

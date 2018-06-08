@@ -67,14 +67,14 @@ int Locate (Lqueue Q, QElemType e )
 
 void print(Lqueue Q)
 {
-	Queueptr p;
-	p=Q.front->next;
-	while(p)
-	{
-		cout<<p->data<<"  ";
-		p=p->next;
-	}
-	cout<<endl;
+  Queueptr p;
+  p=Q.front->next;
+  while(p)
+  {
+    cout<<p->data<<"  ";
+    p=p->next;
+  }
+  cout<<endl;
 }
 int main()
  {
@@ -82,27 +82,27 @@ int main()
    QElemType e;
    int i,n,t;
    InitQueue(Q);
-   cout<<"ÄúÒªÔÚ¶ÓÁÐÖÐ²åÈë¼¸¸öÔªËØ£º";
+   cout<<"æ‚¨è¦åœ¨é˜Ÿåˆ—ä¸­æ’å…¥å‡ ä¸ªå…ƒç´ ï¼š";
    cin>>n;
    for(i=1;i<=n;i++)
    {
        cin>>e;
        Enqueue(Q,e);
    }
-   cout<<"Ä¿Ç°¶ÓÁÐÖÐÔªËØÎª£º";
+   cout<<"ç›®å‰é˜Ÿåˆ—ä¸­å…ƒç´ ä¸ºï¼š";
    print(Q);
 
-   cout<<"ÇëÊäÈëÄúÒª²éÑ¯µÄÔªËØ";
+   cout<<"è¯·è¾“å…¥æ‚¨è¦æŸ¥è¯¢çš„å…ƒç´ ";
    cin>>e;
    t=Locate(Q,e);
    if(t==0)
-       cout<<e<<"²»ÔÚ¶ÓÁÐÖÐ"<<endl;
+       cout<<e<<"ä¸åœ¨é˜Ÿåˆ—ä¸­"<<endl;
    else
-      cout<<e<<"ÊÇ¶ÓÁÐÖÐµÄµÚ"<<t<<"¸öÔªËØ"<<endl;
+      cout<<e<<"æ˜¯é˜Ÿåˆ—ä¸­çš„ç¬¬"<<t<<"ä¸ªå…ƒç´ "<<endl;
 
    Dequeue(Q,e);
-   cout<<e<<"³ö¶Ó"<<endl;
-   cout<<"Ä¿Ç°¶ÓÁÐÖÐÔªËØÎª£º";
+   cout<<e<<"å‡ºé˜Ÿ"<<endl;
+   cout<<"ç›®å‰é˜Ÿåˆ—ä¸­å…ƒç´ ä¸ºï¼š";
    print(Q);
    system("PAUSE");
    return 1;

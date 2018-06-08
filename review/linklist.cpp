@@ -28,7 +28,7 @@ Status GetElem_L ( LinkList L, int i, ElemType &e )
     return ERROR;
 }  
 Status ListInsert_L ( LinkList &L, int i , ElemType e ) {
-     // ÔÚ´øÍ·½áµãµÄµ¥Á´±íLÖĞµÚi¸öÊı¾İÔªËØÖ®Ç°²åÈëÊı¾İÔªËØe 
+     // åœ¨å¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨Lä¸­ç¬¬iä¸ªæ•°æ®å…ƒç´ ä¹‹å‰æ’å…¥æ•°æ®å…ƒç´ e 
     LinkList p,s;
     int j=0;
     p=L;   
@@ -46,7 +46,7 @@ Status ListInsert_L ( LinkList &L, int i , ElemType e ) {
 } 
 
 Status ListDelete_L ( LinkList &L, int i , ElemType &e ) {
-     // ÔÚ´øÍ·½áµãµÄµ¥Á´±íLÖĞ£¬É¾³ıµÚi¸öÔªËØ£¬²¢ÓÉe·µ»ØÆäÖµ 
+     // åœ¨å¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨Lä¸­ï¼Œåˆ é™¤ç¬¬iä¸ªå…ƒç´ ï¼Œå¹¶ç”±eè¿”å›å…¶å€¼ 
      LinkList p,q;
      int j=0;
     while(p && j<i-1)
@@ -64,7 +64,7 @@ Status ListDelete_L ( LinkList &L, int i , ElemType &e ) {
 } 
 
 void  CreateList_L (LinkList &L, int n) {
-    //ÄæÎ»ĞòÊäÈën¸öÔªËØµÄÖµ£¬½¨Á¢´øÍ·½áµãµÄµ¥Á´±íL¡£
+    //é€†ä½åºè¾“å…¥nä¸ªå…ƒç´ çš„å€¼ï¼Œå»ºç«‹å¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨Lã€‚
     LinkList p;
     L->next=(LinkList) malloc(sizeof(LNode)) ;
     L->next=NULL;
@@ -80,38 +80,38 @@ void  CreateList_L (LinkList &L, int n) {
 
 void print(LinkList L)
 {
-	LinkList p;
-	p=L->next;
-	while(p)
-	{
-		cout<<p->data;
-		p=p->next;
-	}
+  LinkList p;
+  p=L->next;
+  while(p)
+  {
+    cout<<p->data;
+    p=p->next;
+  }
 }
 int main()
  {
    LinkList L;
    ElemType e;
    int i,n,t;
-   cout<<"ÄúÒªÔÚ±íÖĞ²åÈë¼¸¸öÔªËØ£º";
+   cout<<"æ‚¨è¦åœ¨è¡¨ä¸­æ’å…¥å‡ ä¸ªå…ƒç´ ï¼š";
    cin>>n;
    CreateList_L(L,n);
-   cout<<"Ä¿Ç°±íÖĞÔªËØÎª£º";
+   cout<<"ç›®å‰è¡¨ä¸­å…ƒç´ ä¸ºï¼š";
    print(L);
 
-   cout<<"ÇëÊäÈëÄúÒª²éÑ¯ÔªËØµÄÎ»ÖÃ£º";
+   cout<<"è¯·è¾“å…¥æ‚¨è¦æŸ¥è¯¢å…ƒç´ çš„ä½ç½®ï¼š";
    cin>>i;
    GetElem_L(L,i,e); 
-   cout<<"ÔªËØÖµÎª:"<<e<<endl;
+   cout<<"å…ƒç´ å€¼ä¸º:"<<e<<endl;
    
-   cout<<"ÇëÊäÈëÄúÒªÉ¾³ıÔªËØµÄÎ»ÖÃ£º";
+   cout<<"è¯·è¾“å…¥æ‚¨è¦åˆ é™¤å…ƒç´ çš„ä½ç½®ï¼š";
    cin>>i;
    ListDelete_L(L,i,e); 
    if(t==ERROR)
-       cout<<"É¾³ıµÚ"<<i<<"¸öÊı¾İÊ§°Ü"<<endl;
+       cout<<"åˆ é™¤ç¬¬"<<i<<"ä¸ªæ•°æ®å¤±è´¥"<<endl;
      else
-       cout<<"É¾³ıµÚ"<<i<<"¸öµÄÔªËØÖµÎª"<<e<<endl;
-   cout<<"Ä¿Ç°±íÖĞÔªËØÎª£º";
+       cout<<"åˆ é™¤ç¬¬"<<i<<"ä¸ªçš„å…ƒç´ å€¼ä¸º"<<e<<endl;
+   cout<<"ç›®å‰è¡¨ä¸­å…ƒç´ ä¸ºï¼š";
    print(L);
    system("PAUSE");
    return 1;

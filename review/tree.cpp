@@ -1,6 +1,6 @@
 #include <iostream>
  using namespace std;
- #include <malloc.h>
+// #include <malloc.h>
  #define TRUE 1
  #define FALSE 0
  #define OK 1

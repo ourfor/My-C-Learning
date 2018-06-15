@@ -12,8 +12,8 @@ typedef int Status;
 typedef double ElemType;
 
 //顺序表常量
-#define Init_list_size 100
-#define Add_size 20
+#define Init_list_size 10
+#define Add_size 5
 
 //顺序表定义
 struct Sqlist{
@@ -44,12 +44,13 @@ Status InputSqlist(Sqlist &T)
 	{
 		cin >> *p;
 		stop_input=cin.get();
-		//T.length+=1;
+		T.length+=1;
 	}
-	T.length=p - T.base;
+	//T.length=p - T.base;
 
 	return OK;
 }
+
 
 //线性表元素的插入
 Status InsertSqlist(Sqlist &T,ElemType e)
@@ -59,7 +60,9 @@ Status InsertSqlist(Sqlist &T,ElemType e)
 	cin >> i_l;
 	if(i_l>=T.length)
 	{
-		
+		T.base=(ElemType *)malloc((T.length + Add_size) * sizeof(ElemType));
+		if(!T.base) exit(OVERFLOW);
+		T.length=T.length + Add_size;	
 	}
 	ElemType *p=T.base;
 
@@ -69,6 +72,7 @@ Status InsertSqlist(Sqlist &T,ElemType e)
 	return OK;
 
 }
+
 
 
 //打印表中元素

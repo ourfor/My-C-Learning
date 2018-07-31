@@ -21,3 +21,4 @@ void Circle::Calculate()
 {
 	area= PI * radius * radius;
 }
+

@@ -18,6 +18,7 @@ void Tree::Input(BiTree &T)
 	scanf("%c",&ch);
 	if(ch==' ') T=NULL;
 	else {
+		T=(BiTree)malloc(sizeof(BiNode));
 		T->data=ch;
 		Input(T->lchild);
 		Input(T->rchild);

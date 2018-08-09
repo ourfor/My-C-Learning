@@ -33,11 +33,11 @@ void Tree::Preorder(BiTree T)
 	}
 }
 
-int Tree::Deepth(Bitree T)
+int Tree::Deepth(BiTree T)
 {
 	int level=0;
 	if(T){
-		level=1 + ((Deepth(T->lchild)>Deepth(T->rchild))?Deepth(T->lchild):Deepth(T->rchild))
+		level=1 + ((Deepth(T->lchild)>Deepth(T->rchild))?Deepth(T->lchild):Deepth(T->rchild));
 	}
 
 	return level;
@@ -46,13 +46,14 @@ int Tree::Deepth(Bitree T)
 
 int Tree::Leaves(BiTree T)
 {
-	static int counter++;
+	static int counter;
 	if(T){
 		if(!T->lchild&&!T->rchild) counter++;
 		Leaves(T->lchild);
 		Leaves(T->rchild);
 
 	}
+	return counter;
 }
 
 

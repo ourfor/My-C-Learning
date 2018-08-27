@@ -1,4 +1,8 @@
 <p align=center>
+    
+</p>
+
+<p align=center>
     <a href="https://github.com/ourfor/My-C-Learning/issues"><img src="https://img.shields.io/github/issues/ourfor/My-C-Learning.svg"></a>
     <a href="https://github.com/ourfor/My-C-Learning/network"><img src="https://img.shields.io/github/forks/ourfor/My-C-Learning.svg"></a>
     <a href="https://github.com/ourfor/My-C-Learning/stargazers"><img src="https://img.shields.io/github/stars/ourfor/My-C-Learning.svg"></a>
@@ -8,6 +12,7 @@
 <p align=center>
     <a><img src="https://img.shields.io/badge/QQ%3A2320813747-online-orange.svg"></a>
     <a><img src="https://img.shields.io/badge/WeChat%3Aqq2320813747-enable-lightgrey.svg"></a>
+    <a href="https://weibo.com/u/5213768713?refer_flag=1001030201_&is_all=1"><img src="https://img.shields.io/badge/Weibo-%40ourfor-brightgreen.svg"></a>
 </p>
 
 # My C++ Learning

@@ -1,3 +1,15 @@
+<p align=center>
+    <a href="https://github.com/ourfor/My-C-Learning/issues"><img src="https://img.shields.io/github/issues/ourfor/My-C-Learning.svg"></a>
+    <a href="https://github.com/ourfor/My-C-Learning/network"><img src="https://img.shields.io/github/forks/ourfor/My-C-Learning.svg"></a>
+    <a href="https://github.com/ourfor/My-C-Learning/stargazers"><img src="https://img.shields.io/github/stars/ourfor/My-C-Learning.svg"></a>
+    <a href="https://github.com/ourfor/My-C-Learning/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ourfor/My-C-Learning.svg"></a>
+    <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fourfor%2FMy-C-Learning"><img src="https://img.shields.io/twitter/url/https/github.com/ourfor/My-C-Learning.svg?style=social"></a>
+</p>
+<p align=center>
+    <a><img src="https://img.shields.io/badge/QQ%3A2320813747-online-orange.svg"></a>
+    <a><img src="https://img.shields.io/badge/WeChat%3Aqq2320813747-enable-lightgrey.svg"></a>
+</p>
+
 # My C++ Learning
 > Saving the  process of my_C++_Language_learning   
 ***I am a student who major in Software Engineering in Hunan Normal University. I make this Repository to help me learn C++ language better.***  

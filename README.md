@@ -1,5 +1,5 @@
 <p align=center>
-    
+    <img src="star.jpg">
 </p>
 
 <p align=center>

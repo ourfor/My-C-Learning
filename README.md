@@ -80,7 +80,7 @@
 </table>
 
 
-- Which IDE(integrated development environments) I use? I use Qt and g++, but I often use g++ which isn't a IDE. As you can see VC need about 6G. However we need not use all of this tool.
+- Which IDE(integrated development environments) I use? I use CLion and g++, but I often use g++ which isn't a IDE.It is a compiler. As you can see, Visual Studio C++ need about 6G's room. However we need not use all of this tool.
 - Which book I use to learn C++ language? Proclaim: In our class, only me use this book  ***C++ Prime Plus*** .
 - You can use macOS and Windows to compile source code. Linux is also a good choice.
 

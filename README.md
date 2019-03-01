@@ -18,10 +18,13 @@
 # My C++ Learning
 > Saving the  process of my_C++_Language_learning   
 ***I am a student who major in Software Engineering in Hunan Normal University. I make this Repository to help me learn C++ language better.***  
-
+<script>
+    let th_table = document.getElementById("test");
+    th_table.style.background="blue";
+</script>
 <table>
     <tr>
-        <th>节次/周次</th>
+        <th id="test">节次/周次</th>
         <th>星期一</th>
         <th>星期二</th>
         <th>星期三</th>
